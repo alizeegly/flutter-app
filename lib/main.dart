@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:travelapp/screens/home.dart';
 // import 'package:travelapp/screens/welcome.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:travelapp/screens/main_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
           Theme.of(context).textTheme,
         ),
       ),
-      home: const HomeScreen(),
+      home: const MainPage()
     );
   }
 }

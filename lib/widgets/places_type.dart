@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:travelapp/models/places_type_model.dart';
 
 class TypePlaces extends StatelessWidget {
-  const TypePlaces({Key? key}) : super(key: key);
+  const TypePlaces({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
