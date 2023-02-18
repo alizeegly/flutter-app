@@ -18,7 +18,7 @@ class _MainPageState extends State<MainPage> {
     ProfileScreen()
   ];
 
-  int currentIndex = 0;
+  int currentIndex = 2;
 
   void onTap(int index) {
     setState(() {
