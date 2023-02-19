@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:travelapp/models/trip_model.dart';
 import 'package:intl/intl.dart';
+// import 'package:webview_flutter/webview_flutter.dart';
+
 
 class TripDetailPage extends StatelessWidget {
   const TripDetailPage({
@@ -151,13 +153,17 @@ class TripDetailPage extends StatelessWidget {
                       height: 4,
                     ),
                   ),
-                  // Text(
-                  //   "Location",
-                  //   style: TextStyle(
-                  //     color: Theme.of(context).primaryColor,
-                  //     fontSize: 20
-                  //   ),
-                  // ),
+                  Text(
+                    "Location",
+                    style: TextStyle(
+                      color: Theme.of(context).primaryColor,
+                      fontSize: 20
+                    ),
+                  ),
+                  // const WebView(
+                  //   initialUrl: "https://www.paris.fr/",
+                  //   javascriptMode: JavascriptMode.unrestricted,
+                  // )
                   // const SizedBox(height: 10,),
                   // ElevatedButton(
                   //   onPressed: () {

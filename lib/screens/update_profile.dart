@@ -124,11 +124,6 @@ class UpdateProfileScreen extends StatelessWidget {
                       width: 200,
                       child: ElevatedButton(
                         onPressed: () {
-                          // print(controllerFirstName.text);
-                          // print(controllerLastName.text);
-                          // print(controllerEmail.text);
-                          // print(controllerPassword.text);
-                          
                           // if (formData.currentState!.validate()) {
                           //   formData.currentState!.save();
                           //   ScaffoldMessenger.of(context).showSnackBar(

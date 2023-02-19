@@ -7,14 +7,14 @@ class TripModel {
   final DateTime start;
   final DateTime end;
   final String description;
-  final double likes;
+  final int likes;
   final UserModel user;
   final double lat;
   final double lng;
 
   TripModel({
     required this.image,
-    required this.likes,
+    this.likes = 0,
     required this.title,
     required this.start,
     required this.end,
@@ -33,7 +33,7 @@ List<TripModel> trips = [
     start: DateTime(2019, 12, 20),
     end: DateTime(2019, 12, 29),
     description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. \nAenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. \nDonec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. \nDonec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. \n In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum",
-    likes: 4.4,
+    likes: 4400,
     location: "New York",
     user: UserModel(pseudo: "alizee_gly", email: "agillouaye@icloud.com", password: "password", avatar: "assets/avatar.png"),
     lat: 22.5448131,
@@ -45,7 +45,7 @@ List<TripModel> trips = [
     start: DateTime(2019, 12, 20),
     end: DateTime(2019, 12, 29),
     description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. \nAenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. \nDonec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. \nDonec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. \n In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum",
-    likes: 4.1,
+    likes: 241,
     location: "Londres",
     user: UserModel(pseudo: "alizee_gly", email: "agillouaye@icloud.com", password: "password", avatar: "assets/avatar.png"),
     lat: 22.5448131,
@@ -57,7 +57,7 @@ List<TripModel> trips = [
     start: DateTime(2019, 12, 20),
     end: DateTime(2019, 12, 29),
     description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. \nAenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. \nDonec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. \nDonec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. \n In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum",
-    likes: 2.0,
+    likes: 20,
     location: "Paris",
     user: UserModel(pseudo: "alizee_gly", email: "agillouaye@icloud.com", password: "password", avatar: "assets/avatar.png"),
     lat: 22.5448131,
@@ -69,7 +69,7 @@ List<TripModel> trips = [
     start: DateTime(2019, 12, 20),
     end: DateTime(2019, 12, 29),
     description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. \nAenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. \nDonec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. \nDonec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. \n In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum",
-    likes: 3.1,
+    likes: 3100,
     location: "Tahiti",
     user: UserModel(pseudo: "alizee_gly", email: "agillouaye@icloud.com", password: "password", avatar: "assets/avatar.png"),
     lat: 22.5448131,
@@ -81,7 +81,7 @@ List<TripModel> trips = [
     start: DateTime(2019, 12, 20),
     end: DateTime(2019, 12, 29),
     description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. \nAenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. \nDonec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. \nDonec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. \n In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum",
-    likes: 1.8,
+    likes: 18199,
     location: "Sidney",
     user: UserModel(pseudo: "test", email: "test@icloud.com", password: "password", avatar: "assets/avatar.png"),
     lat: 22.5448131,

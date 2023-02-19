@@ -12,10 +12,10 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
 
-  List pages = const [
-    HomeScreen(),
+  List pages = [
+    const HomeScreen(),
     MyTripsScreen(),
-    ProfileScreen()
+    const ProfileScreen()
   ];
 
   int currentIndex = 0;
@@ -38,7 +38,7 @@ class _MainPageState extends State<MainPage> {
         selectedItemColor: Theme.of(context).primaryColor,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.location_on_outlined), label: "My Trips"),
+          BottomNavigationBarItem(icon: Icon(Icons.add_circle_outline_rounded), label: "Add a trip"),
           BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: "Profile"),
         ],
       ),
