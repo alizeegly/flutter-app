@@ -3,6 +3,7 @@ import 'package:travelapp/screens/home.dart';
 // import 'package:travelapp/screens/welcome.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:travelapp/screens/main_page.dart';
+import 'package:travelapp/screens/welcome.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,12 +18,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Travel App',
       theme: ThemeData(
-        primaryColor: Color(0xFF3EBACE),
+        primaryColor: const Color(0xFF3EBACE),
         textTheme: GoogleFonts.mulishTextTheme(
           Theme.of(context).textTheme,
         ),
       ),
-      home: const MainPage()
+      home: const WelcomeScreen()
     );
   }
 }

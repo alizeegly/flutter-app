@@ -23,8 +23,8 @@ class LocationCard extends StatelessWidget {
                 Text(
                   "Your actual trip",
                   style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                        color: Theme.of(context).primaryColor,
-                      ),
+                    color: Theme.of(context).primaryColor,
+                  ),
                 ),
                 const SizedBox(height: 5),
                 Text(

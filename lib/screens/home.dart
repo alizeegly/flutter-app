@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travelapp/models/user_model.dart';
 import 'package:travelapp/widgets/custom_icon_button.dart';
 import 'package:travelapp/widgets/image_card.dart';
 import 'package:travelapp/widgets/location_card.dart';
@@ -20,8 +21,8 @@ class HomeScreen extends StatelessWidget {
           children: [
             const Text("Good Morning"),
             Text(
-              "alizee_gly",
-              style: Theme.of(context).textTheme.labelMedium ,  
+              users[0].pseudo,
+              style: Theme.of(context).textTheme.labelMedium,  
             )
           ]
         ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:travelapp/screens/home.dart';
 import 'package:travelapp/screens/profile.dart';
-import 'package:travelapp/screens/trips.dart';
+import 'package:travelapp/screens/my_trips.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -14,11 +14,11 @@ class _MainPageState extends State<MainPage> {
 
   List pages = const [
     HomeScreen(),
-    TripsScreen(),
+    MyTripsScreen(),
     ProfileScreen()
   ];
 
-  int currentIndex = 2;
+  int currentIndex = 0;
 
   void onTap(int index) {
     setState(() {

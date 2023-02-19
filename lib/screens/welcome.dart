@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travelapp/screens/home.dart';
+import 'package:travelapp/screens/main_page.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -15,49 +16,32 @@ class WelcomeScreen extends StatelessWidget {
               children: [
                 const Spacer(),
                 Image.asset(
-                  'assets/illustration.png',
+                  'assets/logo2.png',
+                  width: 150,
                 ),
-                const SizedBox(height: 40),
-                const Text(
-                  "Explore your journey \nonly with us",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 26,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                const SizedBox(height: 20),
-                const Text(
-                  "All your vacations destinations are here,\nenjoy your holiday",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.black54,
-                    fontSize: 16,
-                  ),
-                ),
+                
                 const Spacer(),
                 Padding(
                   padding: const EdgeInsets.only(bottom: 30),
                   child: SizedBox(
-                    width: double.maxFinite,
+                    width: 200,
                     child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.pushReplacement(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const HomeScreen(),
-                          ),
-                        );
-                      },
+                      onPressed: () {Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const HomeScreen()),
+                      );},
                       style: ElevatedButton.styleFrom(
-                        elevation: 0,
-                        shape: const StadiumBorder(),
-                        padding: const EdgeInsets.symmetric(
-                          vertical: 15,
-                          horizontal: 8.0,
-                        ),
+                        backgroundColor: Theme.of(context).primaryColor,
+                        side: BorderSide.none,
+                        shape: const StadiumBorder()
                       ),
-                      child: const Text("Get Started"),
+                      child: const Text(
+                        "Get started", 
+                        style: TextStyle(
+                          color: Colors.white, 
+                          fontWeight: FontWeight.w600
+                        )
+                      )
                     ),
                   ),
                 )
